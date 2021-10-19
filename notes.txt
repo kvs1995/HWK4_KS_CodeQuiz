@@ -1,0 +1,72 @@
+
+PSUEDO CODE
+
+Sections of the HTML
+1) View Highscore Option
+    -- Highscore screen 
+        --need 5 instances of the high scores containing the initals and scores of the top 5
+        --ordered highest to lowest.
+    --BONUS idea for funnsies: add an Honorable Mention for most questions answered
+    --Buttons:
+        -- View Highscore on main screen
+        -- Go Back 
+        -- Clear High Scores. 
+2) Timer
+    --Countdown from 60 seconds that is displayed throughout the quiz. 
+3) Times Up
+    --Should display 'Times Up!' screen. 
+4) Main Question slides
+    --Text:
+        -- 1 Question per slide
+        -- Answers are correct or incorrect
+    --Buttons:
+        --4 Multiple Choice options (a, b, c, e OR 1,2,3,4)
+    --should also display whether the answers were correct or not
+5) Title screen
+    --introducing the game, i.e. the time limits, what languages, 
+    --Buttons:
+        --Start Quiz
+6) Score screen   
+    --after the time is up there should be a scren that displays the final score
+    --Buttons:
+        --submit
+        --try again
+        --view highscores
+    --forms:
+        --input for initials
+
+
+
+Sections of the HTML
+1) View Highscore Option
+    -When clicked, the top 5 scores should display from the local storage
+        --could use either individual local storage or keep them all in one in a local storage object so that they are all together and can be compared. 
+        --order from largest to smallest.
+    --BONUS idea for funnsies: add an Honorable Mention for most questions answered
+2) Timer
+    --Countdown from 60 seconds that is displayed throughout the quiz. 
+    --Once the timer is up, the quiz is locked. 
+3) Times Up
+    --Once the timer is up, the slides of the questions should disappear. 
+    --Should display 'Times Up!' screen. 
+4) Main Question slides
+    --on click, the next question should appear. 
+        --these questions could be kept in local storage aso well so that we can randomly select the question so that the questions are not always in the same order. 
+    --4 Multiple Choice options (a, b, c, e OR 1,2,3,4)
+5) Title screen
+    --introducing the game, i.e. the time limits
+//User Story 
+AS A coding boot camp student
+I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
+SO THAT I can gauge my progress compared to my peers
+
+GIVEN I am taking a code quiz
+WHEN I click the start button >>>>  THEN a timer starts and I am presented with a question
+
+WHEN I answer a question >>>>>> THEN I am presented with another question
+
+WHEN I answer a question incorrectly >>>>>> THEN time is subtracted from the clock
+
+WHEN all questions are answered or the timer reaches 0 >>>>>> THEN the game is over
+
+WHEN the game is over >>>>>> THEN I can save my initials and my score 
