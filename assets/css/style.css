@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding:0;
+}
+
+body {
+    position:relative;
+    font-size: 20px;
+
+}
+
+h1,
+h2 {
+    margin:20px;
+}
+
+h3 {
+    display: inline;
+}
+main {
+    padding-left: 60px 0px;
+}
+header {
+    width: 100%;
+    background-color: aqua;
+    top: 0;
+    display: inline-block;
+}
+
+
+p {
+    text-align: center;
+}
+
+button {
+    margin-left: 43%;
+    position: relative;
+}
+.container {
+    height: 400px;
+    width:80%;
+    border: black solid 2px;
+    margin: 30px auto;
+
+}
