@@ -15,12 +15,82 @@ header {
     flex-wrap: wrap;
     align-items: center;
     padding: 15px;
+    height: 10%;
+    
     border-bottom: white 2px solid;
+    
 }
 
 main {
-    
+    display: flexbox;
+    flex-wrap: wrap;
 
 
-    
+    border: white solid 2px;  
+    margin: 5% 20%;
+
+}
+
+div {
+    display: flexbox;
+    border: white solid 2px;
+    margin: 10px;
+    /* align-item */
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 5px;
+
+}
+h3 {
+    font-size: 30px;    
+
+}
+
+p {
+    font-size: 20px;
+}
+
+button {
+    background-color: transparent;
+    border:turquoise solid 2px;
+    color: white;
+    font-size: 20px;
+    text-align: left;
+    padding: 5px 10px;
+    margin: 5px 0px;
+}
+
+.description {
+    font-size: 20px;
+    text-align: center;
+}
+
+.questions {
+    visibility: hidden;
+    padding: 5px 10px;
+}
+
+.correct-incorrect {
+    border-top: mediumorchid solid 2px;
+    padding: 5px 10px;
+    opacity: 70%;
+    font-style: italic;
+}
+
+.buttons {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+
+#play-again {
+    text-align: center;
+    width: 25%;
+    align-self: center;
 }
