@@ -45,13 +45,22 @@ playBtn.addEventListener("click",function() {
     var button2 = document.createElement("button"); 
     var button3 = document.createElement("button"); 
     var button4 = document.createElement("button");
+    var a = document.createElement("p")
+    var b = document.createElement("p")
+    var c = document.createElement("p")
+    var d = document.createElement("p")
     var btnList = [button1, button2, button3, button4]
+
 
     for (var i=0; i < btnList.length;i++) {      
         var choice =['a','b','c','d']
+        var varChoicesArray = [a,b,c,d]
         btnList[i].setAttribute("type","button")
         btnList[i].setAttribute("id",choice[i])
         document.body.children[1].children[1].appendChild(btnList[i])
+        varChoicesArray[i].textContent = answersList[0][i]
+        varChoicesArray[i].setAttribute("class","buttons")
+        document.body.children[1].children[1].children[i].appendChild(varChoicesArray[i])
     }
 
     // button1.setAttribute("type","button"); button2.setAttribute("type","button"); button3.setAttribute("type","button"); button4.setAttribute("type","button")
@@ -64,20 +73,19 @@ playBtn.addEventListener("click",function() {
     question.setAttribute("class","questions")
     document.body.children[1].children[0].children[1].appendChild(question)
 
-    var a = document.createElement("p")
-    var b = document.createElement("p")
-    var c = document.createElement("p")
-    var d = document.createElement("p")
-    a.textContent = answersList[0][0]
-    b.textContent = answersList[0][1]
-    c.textContent = answersList[0][2]
-    d.textContent = answersList[0][3]
-    a.setAttribute("class","buttons"); b.setAttribute("class","buttons"); c.setAttribute("class","buttons"); d.setAttribute("class","buttons")
+
+
+
+    // a.textContent = answersList[0][0]
+    // b.textContent = answersList[0][1]
+    // c.textContent = answersList[0][2]
+    // d.textContent = answersList[0][3]
+    // a.setAttribute("class","buttons"); b.setAttribute("class","buttons"); c.setAttribute("class","buttons"); d.setAttribute("class","buttons")
     
-    document.body.children[1].children[1].children[0].appendChild(a)
-    document.body.children[1].children[1].children[1].appendChild(b)
-    document.body.children[1].children[1].children[2].appendChild(c)
-    document.body.children[1].children[1].children[3].appendChild(d)
+    // document.body.children[1].children[1].children[0].appendChild(a)
+    // document.body.children[1].children[1].children[1].appendChild(b)
+    // document.body.children[1].children[1].children[2].appendChild(c)
+    // document.body.children[1].children[1].children[3].appendChild(d)
 
             //need to call a function that displays the finishing score and the play again/view highscore button
     function endScreen() {
