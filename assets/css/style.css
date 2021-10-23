@@ -103,12 +103,13 @@ button {
     flex-direction: column;
     flex-wrap: wrap;
     /* visibility: hidden; */
+    justify-content: space-evenly;
 
 }
 /* potentially rearrange how the buttons are organized. Place the play buttons inthe same class, but have the them have their own IDS for highscore nad playagaom */
 
 #play-again, #view-highscore {
-    visibility: hidden;
+    /* visibility: hidden; */
 }
 
 #play-again, #view-highscore, #play {
