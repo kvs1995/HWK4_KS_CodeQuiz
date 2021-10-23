@@ -82,6 +82,16 @@ playBtn.addEventListener("click",function() {
         scoreMess.textContent = "Score: " + score
         document.body.children[1].children[1].appendChild(scoreMess)
 
+        var submitForm = document.createElement("input")
+        var submitBtn = document.createElement("button");
+        submitForm.setAttribute("type","text")
+        submitForm.setAttribute("name","initials")
+        submitBtn.setAttribute("type","button")
+        submitBtn.setAttribute("id","submitBtn")
+        submitBtn.innerText = "Submit"
+        document.body.children[1].children[2].appendChild(submitForm)
+        document.body.children[1].children[2].appendChild(submitBtn)
+
         var playAgain = document.createElement("button");
         var viewHighScores = document.createElement("button")
         playAgain.innerText = 'Play Again'
@@ -91,14 +101,14 @@ playBtn.addEventListener("click",function() {
         playAgain.setAttribute("id","play-again")
         viewHighScores.setAttribute("id","view-highscore")
 
-        document.body.children[1].children[2].appendChild(playAgain)
-        document.body.children[1].children[2].appendChild(viewHighScores)
+        document.body.children[1].children[3].appendChild(playAgain)
+        document.body.children[1].children[3].appendChild(viewHighScores)
         
      
         playAgain.addEventListener('click', function() {
             location.reload()
         }) 
-
+        // localStorage.setItem("current")
         }
 
 

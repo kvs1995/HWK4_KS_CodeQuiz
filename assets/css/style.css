@@ -90,10 +90,11 @@ button {
     justify-content: space-evenly;
 
 }
-.b1 {
+.b1, .submit {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin: 15px;
     
 }
 
@@ -110,6 +111,7 @@ button {
 
 #play-again, #view-highscore {
     /* visibility: hidden; */
+    
 }
 
 #play-again, #view-highscore, #play {
@@ -124,9 +126,38 @@ button {
     border:turquoise solid 2px;
     /* visibility:hidden; */
 }
+input {
+    background-color: transparent;
+    border: white solid 2px;
+    /* margin: 10px; */
+    padding:5px;
+    height:20px;
+    width: 60%;
+    color:white;
+    font-family: 'Courier New', Courier, monospace;
 
-
-
+}
+.submit {
+    /* border: solid white 2px; */
+    height: 30px;
+    background-color: -internal-light-dark(black);
+    text-decoration: none;
+    display: flex;
+    justify-content: left;
+    /* color:white */
+    /* margin: ; */
+}
+#submitBtn {
+    border: white solid 2px;
+    padding:5px;
+    font-size: 17px;
+    /* size: 2; */
+    /* padding: px; */
+    margin: 0px;
+    background-color: white;
+    color:black;
+    
+}
 button:hover {
     background-color: turquoise;
     opacity: 80%;
