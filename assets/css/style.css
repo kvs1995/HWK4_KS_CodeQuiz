@@ -72,7 +72,7 @@ button {
 }
 
 .questions {
-    visibility: hidden;
+    /* visibility: hidden; */
     padding: 5px 10px;
 }
 
@@ -102,6 +102,7 @@ button {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    /* visibility: hidden; */
 
 }
 /* potentially rearrange how the buttons are organized. Place the play buttons inthe same class, but have the them have their own IDS for highscore nad playagaom */
@@ -120,7 +121,7 @@ button {
 
 #a, #b, #c, #d {
     border:turquoise solid 2px;
-    visibility:hidden;
+    /* visibility:hidden; */
 }
 
 
