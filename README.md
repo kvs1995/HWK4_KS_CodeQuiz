@@ -19,7 +19,7 @@
   
   Take a look at this short video for a walkthrough on how to use the application:
 
-  ![video](./CodingQuiz.gif)
+  ![brief walkthrough of the Coding Quiz Application](./assets/CodingQuiz.gif)
 
   ## Contribution Guidelines
   No guidelines, just have fun with it. 
